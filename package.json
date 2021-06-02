@@ -1,0 +1,19 @@
+{
+  "name": "article-preview-component-master",
+  "version": "1.0.0",
+  "description": "Article preview component",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Erfan Naseri",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "core-js": "^3.13.1",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
