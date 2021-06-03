@@ -13,11 +13,28 @@
     />
 
     <title>Frontend Mentor | Article preview component</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript reference -->
     <script defer src="./src/js/script.js"></script>
+
+    <!-- CSS reference -->
     <link rel="stylesheet" href="./src/css/style.css" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
+    <!-- fontawesome reference -->
+    <link
+      rel="stylesheet"
+      href="../article-preview-component-master/node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+
+    <!-- the header's style -->
+    <!-- <style>
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -25,20 +42,74 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style>
+    </style> -->
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+    <div class="page">
+      <div class="container mobile-view">
+        <figure class="drawer-img">
+          <img src="src/img/drawers.jpg" alt="" />
+        </figure>
 
-    <div class="attribution">
+        <article class="main-text">
+          <div class="text-title">
+            <h1>
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+
+            <div class="text-body">
+              <p>
+                Ever been in a room and felt like something was missing? Perhaps
+                it felt slightly bare and uninviting. I’ve got some simple tips
+                to help you make any room feel complete.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <footer class="social-media">
+          <div class="profile-pic">
+            <img
+              src="../article-preview-component-master/src/img/avatar-michelle.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="profile-info">
+            <div class="name"><p>Michelle Appleton</p></div>
+            <div class="date"><p>28 Jun 2020</p></div>
+          </div>
+
+          <div class="profile-btn">
+            <img
+              src="../article-preview-component-master/src/img/icon-share.svg"
+              alt=""
+            />
+          </div>
+        </footer>
+
+        <div class="social-media-active">
+          <div class="share-text"><h2>S H A R E</h2></div>
+
+          <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+
+          <div class="profile-btn--active">
+            <img src="src/img/icon-share-active.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>

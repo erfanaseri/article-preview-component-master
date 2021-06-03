@@ -13,6 +13,7 @@
     "parcel": "^2.0.0-beta.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "core-js": "^3.13.1",
     "regenerator-runtime": "^0.13.7"
   }

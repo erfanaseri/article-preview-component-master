@@ -1,0 +1,182 @@
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  /* primary colors */
+  --clr-primary-1: hsl(217, 19%, 35%);
+  --clr-primary-2: hsl(214, 17%, 51%);
+  --clr-primary-3: hsl(212, 23%, 69%);
+  --clr-primary-4: hsl(210, 46%, 95%);
+
+  /* primary font family*/
+  --ff-primary: "Manrope", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 13px;
+}
+
+img {
+  width: 100%;
+  /* height: 100%; */
+  display: block;
+}
+
+.page {
+  /* try min-height this time */
+  min-height: 100vh;
+  background-color: var(--clr-primary-4);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+.mobile-view {
+  display: grid;
+  height: 600px;
+  width: 375px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 118px 118px 284px 80px;
+  grid-template-areas: "a" "a" "b" "c";
+}
+
+figure {
+  grid-area: a;
+}
+article {
+  grid-area: b;
+}
+footer {
+  grid-area: c;
+}
+
+.drawer-img {
+  overflow: hidden;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.main-text {
+  padding: 30px;
+}
+
+.text-title {
+  margin-top: 10px;
+  line-height: 30px;
+  color: var(--clr-primary-1);
+}
+
+.text-body {
+  margin-top: 15px;
+  line-height: 30px;
+  font-size: larger;
+  color: var(--clr-primary-2);
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: 93px 186px 96px;
+  grid-template-rows: 1fr;
+}
+
+.profile-pic img {
+  width: 50%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.profile-info {
+  margin-top: 15px;
+}
+
+.name {
+  margin-bottom: 5px;
+  color: var(--clr-primary-1);
+}
+
+.date {
+  color: var(--clr-primary-2);
+}
+
+.profile-btn {
+  border-radius: 50%;
+  background-color: var(--clr-primary-4);
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.profile-btn img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+/* Style for active state of the footer */
+
+.social-media-active {
+  /* we are gonna change this to grid in js */
+  display: none;
+  background-color: var(--clr-primary-1);
+  grid-template-columns: 125px 154px 96px;
+  grid-template-rows: 1fr;
+  height: 80px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.share-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22.5%;
+  color: var(--clr-primary-3);
+}
+
+.icons {
+  margin-top: 12.5%;
+}
+
+.fab {
+  padding: 10px;
+  font-size: x-large;
+  color: white;
+}
+
+.profile-btn--active {
+  border-radius: 50%;
+  background-color: var(--clr-primary-2);
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.profile-btn--active img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
