@@ -23,6 +23,7 @@ Variables
 body {
   font-family: var(--ff-primary);
   font-size: 13px;
+  background-color: var(--clr-primary-4);
 }
 
 img {
@@ -34,7 +35,7 @@ img {
 .page {
   /* try min-height this time */
   min-height: 100vh;
-  background-color: var(--clr-primary-4);
+  /* background-color: var(--clr-primary-4); */
   display: grid;
   justify-content: center;
   align-content: center;
@@ -46,7 +47,7 @@ img {
   border-radius: 25px;
 }
 
-.mobile-view {
+.change-view {
   display: grid;
   height: 600px;
   width: 375px;
@@ -179,4 +180,89 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .change-view {
+    /* display: grid; */
+    width: 979px;
+    height: 335px;
+    grid-template-columns: 376px 603px;
+    grid-template-rows: 235px 100px;
+    grid-template-areas:
+      "a b"
+      "a c";
+  }
+
+  .drawer-img {
+    border-top-right-radius: initial;
+  }
+
+  .drawer-img img {
+    grid-area: a;
+    border-bottom-left-radius: 25px;
+    height: 333px;
+  }
+
+  .main-text {
+    grid-area: b;
+  }
+
+  .social-media {
+    grid-area: c;
+    grid-template-columns: 93px 186px 324px;
+  }
+
+  .profile-btn {
+    margin-right: initial;
+    margin-left: 250px;
+  }
+}
+
+/* .main {
+  height: 100%;
+} */
+
+/* .attribution {
+  position: absolute;
+  top: 0;
+} */
+
+/* where we are gonna move from */
+.pop-up {
+  display: none;
+  position: absolute;
+  margin-left: -140px;
+  margin-top: -130px;
+}
+
+.pop-up--main {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  grid-template-rows: 1fr;
+  width: 333px;
+  height: 68px;
+  background-color: var(--clr-primary-1);
+  border-radius: 12px;
+}
+
+.pop-up--main---share-text {
+  margin-left: 50px;
+  margin-top: 17px;
+  color: var(--clr-primary-3);
+}
+
+.pop-up--main---icons {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.pop-up--bottom {
+  width: 39px;
+  height: 39px;
+  background-color: var(--clr-primary-1);
+  transform: rotate(45deg);
+  top: 39px;
+  left: 140px;
+  position: absolute;
 }
